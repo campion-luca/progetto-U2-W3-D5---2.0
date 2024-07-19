@@ -1,0 +1,192 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* HOME NETFLIX */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.netflix-logo {
+    width: 7%;
+}
+
+.foto-profilo {
+    width: 10%;
+}
+
+.account-settings {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+/* animazione hover dei film */
+.griglia-film img:hover {
+    transform: scale(1.5);
+    transition: transform 300ms linear 0s;
+}
+
+/* linguetta " new episodes " */
+.cartello-novita {
+    font-size: 9px;
+    padding: 2px 6px;
+    top: 80%;
+}
+
+/* PERSONALIZZAZIONE TASTI LATERALI DESTRA NON FATTIBILI CON BOOTSTRAP "vanilla" */
+.btn-filtri-film {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* ------------------------------- */
+.filtri-film {
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.griglia-film img {
+    width: 110%;
+}
+
+.footer-info {
+    margin-top: 110px;
+}
+
+.footer-info i {
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SETTINGS ACCOUNT NETFLIX */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.nome-impostazioni p {
+    font-size: 70px;
+    color: white;
+}
+
+.img-profilo img {
+    width: 80%;
+}
+
+/* NON RESPONSIVE, CODICE ROTTO */
+.icon-edit-profile {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 5px 7px;
+    font-size: 10px;
+    box-shadow: 2px 2px 2px black;
+    top: 100px;
+    right: 110px;
+}
+
+.dropdown-new {
+    /* impossibile trovare un dropdown simile */
+    background-color: black !important;
+    border-radius: 0px !important;
+}
+
+.btn-maturity {
+    background-color: #333333 !important;
+    border: none !important;
+}
+
+.btn-edit-mio {
+    border: 2px solid rgb(107, 107, 107);
+    color: rgb(107, 107, 107);
+    background-color: black;
+    padding: 7px 25px;
+}
+
+.btn-edit-profile {
+    background-color: black;
+    color: rgb(107, 107, 107);
+    border: 2px solid rgb(107, 107, 107);
+    padding: 10px 30px;
+    font-size: 22px;
+}
+
+.btn-edit-profile:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* ---------------------------------- BREAK POINT MOBILE ---------------------------------- */
+
+
+@media screen and (min-width : 576px) {
+    /* L'HO PENSATA COSI' , VERSIONE MOBILE CLASSICONE TUTTO CENTRATO A " PORTATA DI POLLICE " */
+    /* PURTROPPO LA NAV BAR DI QUEL GRANDISSIMO BOOTSTRAP SI E' ROTTA */
+
+
+    /* MOBILE -> HOME PAGE */
+    body {
+        margin: 10px !important;
+    }
+
+    .titolo-categoria {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .filtri-film {
+        justify-content: center;
+    }
+
+
+    /* MOBILE -> SETTINGS PAGE */
+    .nome-impostazioni p {
+        font-size: 50px;
+    }
+
+    .img-profilo img {
+        width: 30%;
+        padding-bottom: 10px;
+    }
+
+    .btn-edit-profile {
+        margin: 5px;
+        padding: 5px 15px;
+    }
+}
+
+/* IL TESTO TORNERA' NORMALE ALLA VERSIONE TABLET / COMPUTER PER UNA MIA VISIONE GRAFICA PIU "ACCETTABILE" */
+
+
+/* ---------------------------------- BREAK POINT TABLET ---------------------------------- */
+
+@media screen and (min-width : 990px) {
+    .filtri-film {
+        justify-content: start;
+    }
+
+    /* TABLET -> HOME PAGE */
+    .titolo-categoria {
+        text-align: start;
+        font-weight: 600;
+    }
+
+
+    /* TABLET -> SETTINGS PAGE */
+    .img-profilo img {
+        width: 100%;
+    }
+
+    .btn-edit-profile {
+        padding: 10px 30px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .main-substutution {
+        margin-right: 25% !important;
+        /* important superfluo */
+        margin-left: 25% !important;
+    }
+}
